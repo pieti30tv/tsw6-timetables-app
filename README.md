@@ -1,16 +1,97 @@
-# React + Vite
+# TSW6 Timetable Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal railway dispatcher tool for **Train Sim World 6 Special Edition** — manage timetables, track trains live, calculate delays and get AI-powered dispatch assistance.
 
-Currently, two official plugins are available:
+> ⚠️ Work in progress — actively being built.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Timetable Editor** — Create and manage timetables for all TSW6 Special Edition routes. Add trains, stops, platforms and departure times.
+- **Live Tracker** — Select an active train and track its position in real time. Includes a route progress bar and simulation mode (1x / 2x / 5x speed).
+- **Delay Calculator** — Input planned vs. actual times and instantly see delay severity and cascade effects on connecting trains.
+- **AI Dispatcher** — Chat with an AI assistant that knows your loaded timetable. Ask questions like _"What happens if IC 1234 is 15 minutes late?"_
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Routes
+
+All 8 TSW6 Special Edition routes are included:
+
+| Route                                       | Country        |
+| ------------------------------------------- | -------------- |
+| Morristown Line (New York – Dover)          | 🇺🇸 USA         |
+| Bahnstrecke Leipzig – Dresden               | 🇩🇪 Germany     |
+| Mannheim – Kaiserslautern                   | 🇩🇪 Germany     |
+| MBTA Boston – Worcester                     | 🇺🇸 USA         |
+| Riviera Line (Exeter – Plymouth & Paignton) | 🇬🇧 UK          |
+| Cardiff City Network                        | 🇬🇧 UK          |
+| Semmeringbahn                               | 🇦🇹 Austria     |
+| Zwolle – Groningen                          | 🇳🇱 Netherlands |
+
+---
+
+## Tech Stack
+
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Router v6](https://reactrouter.com/)
+- [Anthropic API](https://www.anthropic.com/) (AI Dispatcher)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- An [Anthropic API key](https://console.anthropic.com/) for the AI Dispatcher
+
+### Installation
+
+```bash
+git clone https://github.com/pieti30tv/tsw6-timetables-app.git
+cd tsw6-timetables-app/tsw6-timetables
+npm install
+```
+
+### Environment
+
+Create a `.env` file in the project root:
+
+```
+VITE_ANTHROPIC_API_KEY=your_api_key_here
+```
+
+> ⚠️ This app is intended for **local personal use only**. The API key is bundled client-side — do not deploy publicly without a backend proxy.
+
+### Run
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173)
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/      # Reusable UI components
+├── constants/       # TSW6 routes and train types
+├── context/         # Global state (timetables, tracker)
+├── hooks/           # Custom React hooks
+├── pages/           # Main pages (Timetable, Tracker, Delay, Dispatcher)
+├── types/           # JSDoc type definitions
+└── utils/           # Helper functions (time, cascade logic, import/export)
+```
+
+---
+
+## License
+
+[Apache License 2.0](./LICENSE)
