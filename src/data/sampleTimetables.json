@@ -1,0 +1,86 @@
+[
+  {
+    "id": "sample-morristown-001",
+    "name": "Morristown Line — Weekday",
+    "description": "Sample NJ Transit weekday timetable for the Morristown Line (TSW6).",
+    "createdAt": "2024-01-01T08:00:00.000Z",
+    "updatedAt": "2024-01-01T08:00:00.000Z",
+    "trains": [
+      {
+        "id": "train-nj-1001",
+        "trainNumber": "NJT 6601",
+        "trainType": "NJT",
+        "route": "morristown_line",
+        "direction": "inbound",
+        "notes": "Peak AM service to New York Penn Station",
+        "stops": [
+          { "id": "s1", "stationName": "Morristown", "arrival": "", "departure": "06:15", "platform": "1", "passingStop": false },
+          { "id": "s2", "stationName": "Madison", "arrival": "06:23", "departure": "06:24", "platform": "1", "passingStop": false },
+          { "id": "s3", "stationName": "Chatham", "arrival": "06:29", "departure": "06:30", "platform": "1", "passingStop": false },
+          { "id": "s4", "stationName": "Summit", "arrival": "06:36", "departure": "06:37", "platform": "2", "passingStop": false },
+          { "id": "s5", "stationName": "Short Hills", "arrival": "06:41", "departure": "06:42", "platform": "1", "passingStop": false },
+          { "id": "s6", "stationName": "Millburn", "arrival": "06:45", "departure": "06:46", "platform": "1", "passingStop": false },
+          { "id": "s7", "stationName": "Maplewood", "arrival": "06:50", "departure": "06:51", "platform": "1", "passingStop": false },
+          { "id": "s8", "stationName": "South Orange", "arrival": "06:54", "departure": "06:55", "platform": "1", "passingStop": false },
+          { "id": "s9", "stationName": "Newark Broad Street", "arrival": "07:05", "departure": "07:06", "platform": "3", "passingStop": false },
+          { "id": "s10", "stationName": "New York Penn Station", "arrival": "07:38", "departure": "", "platform": "8", "passingStop": false }
+        ]
+      },
+      {
+        "id": "train-nj-1002",
+        "trainNumber": "NJT 6602",
+        "trainType": "NJT",
+        "route": "morristown_line",
+        "direction": "outbound",
+        "notes": "Peak PM return from New York Penn Station",
+        "stops": [
+          { "id": "s11", "stationName": "New York Penn Station", "arrival": "", "departure": "17:15", "platform": "6", "passingStop": false },
+          { "id": "s12", "stationName": "Newark Broad Street", "arrival": "17:47", "departure": "17:48", "platform": "2", "passingStop": false },
+          { "id": "s13", "stationName": "South Orange", "arrival": "17:58", "departure": "17:59", "platform": "1", "passingStop": false },
+          { "id": "s14", "stationName": "Maplewood", "arrival": "18:02", "departure": "18:03", "platform": "1", "passingStop": false },
+          { "id": "s15", "stationName": "Millburn", "arrival": "18:07", "departure": "18:08", "platform": "1", "passingStop": false },
+          { "id": "s16", "stationName": "Short Hills", "arrival": "18:11", "departure": "18:12", "platform": "1", "passingStop": false },
+          { "id": "s17", "stationName": "Summit", "arrival": "18:16", "departure": "18:17", "platform": "1", "passingStop": false },
+          { "id": "s18", "stationName": "Chatham", "arrival": "18:23", "departure": "18:24", "platform": "1", "passingStop": false },
+          { "id": "s19", "stationName": "Madison", "arrival": "18:29", "departure": "18:30", "platform": "1", "passingStop": false },
+          { "id": "s20", "stationName": "Morristown", "arrival": "18:38", "departure": "", "platform": "1", "passingStop": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sample-dresden-001",
+    "name": "Dresden–Leipzig — IC Service",
+    "description": "Sample InterCity timetable between Dresden and Leipzig (TSW6).",
+    "createdAt": "2024-01-01T08:00:00.000Z",
+    "updatedAt": "2024-01-01T08:00:00.000Z",
+    "trains": [
+      {
+        "id": "train-ic-2301",
+        "trainNumber": "IC 2301",
+        "trainType": "IC",
+        "route": "dresden_leipzig",
+        "direction": "westbound",
+        "notes": "Morning InterCity Dresden → Leipzig",
+        "stops": [
+          { "id": "d1", "stationName": "Dresden Hbf", "arrival": "", "departure": "08:02", "platform": "3", "passingStop": false },
+          { "id": "d2", "stationName": "Riesa", "arrival": "08:38", "departure": "08:40", "platform": "2", "passingStop": false },
+          { "id": "d3", "stationName": "Leipzig Hbf", "arrival": "09:18", "departure": "", "platform": "11", "passingStop": false }
+        ]
+      },
+      {
+        "id": "train-ic-2304",
+        "trainNumber": "IC 2304",
+        "trainType": "IC",
+        "route": "dresden_leipzig",
+        "direction": "eastbound",
+        "notes": "Afternoon return Leipzig → Dresden",
+        "stops": [
+          { "id": "d4", "stationName": "Leipzig Hbf", "arrival": "", "departure": "14:42", "platform": "9", "passingStop": false },
+          { "id": "d5", "stationName": "Riesa", "arrival": "15:20", "departure": "15:22", "platform": "1", "passingStop": false },
+          { "id": "d6", "stationName": "Dresden Hbf", "arrival": "15:58", "departure": "", "platform": "4", "passingStop": false }
+        ]
+      }
+    ]
+  }
+]

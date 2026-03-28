@@ -1,0 +1,30 @@
+export const TRAIN_TYPES = [
+  { id: 'IC',   label: 'IC — InterCity' },
+  { id: 'ICE',  label: 'ICE — InterCity Express' },
+  { id: 'EC',   label: 'EC — EuroCity' },
+  { id: 'NJ',   label: 'NJ — NightJet' },
+  { id: 'RE',   label: 'RE — RegionalExpress' },
+  { id: 'RB',   label: 'RB — RegionalBahn' },
+  { id: 'S',    label: 'S — S-Bahn' },
+  { id: 'GF',   label: 'GF — Goods Freight' },
+  { id: 'Amtrak', label: 'Amtrak' },
+  { id: 'MARC', label: 'MARC' },
+  { id: 'NJT',  label: 'NJ Transit' },
+  { id: 'BNSF', label: 'BNSF Freight' },
+  { id: 'UP',   label: 'Union Pacific' },
+  { id: 'CSX',  label: 'CSX Freight' },
+  { id: 'NS',   label: 'Norfolk Southern' },
+  { id: 'GWR',  label: 'GWR' },
+  { id: 'TL',   label: 'TransPennine Express' },
+  { id: 'Tube', label: 'London Underground' },
+  { id: 'Other', label: 'Other' },
+]
+
+export const DIRECTIONS = [
+  { id: 'northbound',  label: 'Northbound' },
+  { id: 'southbound',  label: 'Southbound' },
+  { id: 'eastbound',   label: 'Eastbound' },
+  { id: 'westbound',   label: 'Westbound' },
+  { id: 'inbound',     label: 'Inbound' },
+  { id: 'outbound',    label: 'Outbound' },
+]
